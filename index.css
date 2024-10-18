@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 15%;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+  }
+  
+  .sidebar .icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  .button {
+    display: block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 5px;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  /* .login-button, .fasilitas {
+    display: block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  } */
+  
+  
+  
+  .konten {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin-left: 15%;
+  }
+  
+  .kos{
+    padding: 2%;
+  }
+  
+  .title{
+    padding-right: 2%;
+  }
+  .title h1{
+    margin: 2%;
+  }
+  
+  
+  .title {
+    border-bottom: 2px solid black;
+  }
+  
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 84%;
+    margin-bottom: 1%;
+    margin-left: 16%;
+  }
+
+  
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack content vertically */
+    }
+    
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    
+    .konten {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .login-box-next {
+        width: 95%; /* Full width on smaller screens */
+        max-width: 350px;
+    }
+    }
+    
+    @media (max-width: 480px) {
+    .login-box-next {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 1.2em;
+    }
+    
+    .input-group input {
+        padding: 8px;
+    }
+    
+    .admin-button {
+        padding: 8px;
+    }
+    }
+  

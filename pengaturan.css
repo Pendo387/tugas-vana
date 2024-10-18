@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 15%;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+  }
+  
+  .sidebar .icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  .button {
+    display: block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 5px;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  /* .login-button, .fasilitas {
+    display: block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  } */
+  
+  
+  
+  .konten {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin-left: 15%;
+  }
+  
+  .kos{
+    padding: 2%;
+  }
+  
+  .title{
+    padding-right: 2%;
+  }
+  .title h1{
+    margin: 2%;
+    font-size: 20px;
+  }
+  
+  
+  .title {
+    
+    border-bottom: 2px solid black;
+  }
+  
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 84%;
+    margin-bottom: 1%;
+    margin-left: 16%;
+  }
+
+  .isi {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-top: 2%;
+    margin-left: 16%;
+  }
+
+  .isi .button{
+    direction: 1;
+  }
+
+  .isi .buttons button {
+    width: 100px;
+    height: 40px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.isi .buttons .add {
+    background-color: #4CAF50;
+}
+
+.isi .buttons .add:hover {
+    background-color: #000000;
+}
+
+button:hover{
+    background-color: #0A2840;
+}
+
+.isi .buttons .delete {
+    background-color: #F44336;
+}
+.isi .profile {
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 20px;
+}
+.isi .profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.isi .profile .info {
+    flex-grow: 1;
+}
+.isi .profile .info p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #0A2840;
+}
+.isi .profile .edit-icon {
+    font-size: 24px;
+    color: #0A2840;
+    cursor: pointer;
+}
+.isi .profiles{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+  
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack content vertically */
+    }
+    
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    
+    .konten {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .login-box-next {
+        width: 95%; /* Full width on smaller screens */
+        max-width: 350px;
+    }
+    }
+    
+    @media (max-width: 480px) {
+    .login-box-next {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 1.2em;
+    }
+    
+    .input-group input {
+        padding: 8px;
+    }
+    
+    .admin-button {
+        padding: 8px;
+    }
+    }
+  
